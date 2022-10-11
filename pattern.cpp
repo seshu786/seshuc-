@@ -1,22 +1,19 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
 int main()
 {
-    char input, numarical = '1';
-
-    cout << "Enter the uppercase character you want to print in the last row: ";
-    cin >> input;
-
-    for(int i = 1; i <= (input-'1'+1); ++i)
-    {
-        for(int j = 1; j <= i; ++j)
-        {
-            cout << numarical << " ";
-        }
-        ++numarical;
-
-        cout << endl;
-    }
-    return 0;
+	int rows ,i,j;
+	cout<<"enter the no rows" ;
+	cin>>rows;
+		{
+			for(i=1 ; i<=rows ; i++)
+			{
+				for(j=1 ; j<=i ; j++)
+				{
+					cout<<i;
+				}
+				cout<<endl;
+			}
+		}
+	return 0;
 }
